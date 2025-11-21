@@ -64,9 +64,9 @@ That's it! Visual Studio Code will regenerate the JavaScript file every time you
 
 ### 編集するファイル
 
-- ui.html
-- code.ts
+- [ui.html](ui.html)
+- [code.ts](code.ts)
 
 ### プロンプト
 
-- prompt.md
+- [prompt.md](prompt.md)
