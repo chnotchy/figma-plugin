@@ -7,7 +7,7 @@
 // full browser environment (See https://www.figma.com/plugin-docs/how-plugins-run).
 
 // This shows the HTML page in "ui.html".
-figma.showUI(__html__, { width: 300, height: 400 });
+figma.showUI(__html__, { width: 400, height: 600 });
 
 // 要素数を取得する関数
 function getElementCount(selectionOnly: boolean): number {
