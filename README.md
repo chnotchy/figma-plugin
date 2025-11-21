@@ -44,3 +44,29 @@ We recommend writing TypeScript code using Visual Studio code:
 That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
 
 ## ハンズオンガイド
+
+### 流れ
+
+1. 作りたいものを考える
+2. セットアップ
+   1. プロジェクトのzipダウンロード
+   2. ツール（NPM, TypeScript, Visual Studio Code, Figma）をインストール
+3. プラグイン開発にチャレンジ
+   1. `npm i`
+   2. `npm run watch`
+   3. Figmaからプラグインを開く
+   4. バイブコーディング
+4. 作ったものを共有
+
+### 作りたいもの
+
+- 要素の端数を切り捨てるFigmaプラグイン
+
+### 編集するファイル
+
+- ui.html
+- code.ts
+
+### プロンプト
+
+- prompt.md
