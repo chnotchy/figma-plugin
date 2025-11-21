@@ -65,8 +65,10 @@ That's it! Visual Studio Code will regenerate the JavaScript file every time you
 ### 編集するファイル
 
 - [ui.html](ui.html)
+  - UI（文字・ボタンやそれらのデザイン）を構築するファイルです。
 - [code.ts](code.ts)
+  - ロジック（ボタンを押した時の処理）を記述するファイルです。
 
 ### プロンプト
 
-- [prompt.md](prompt.md)
+- [prompt.md](prompt.md) を参考に、AIとやりとりしてみましょう。
