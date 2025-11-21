@@ -15,7 +15,7 @@ function getElementCount(selectionOnly: boolean): number {
     // 選択範囲のみ
     return figma.currentPage.selection.length;
   } else {
-    // ファイル全体
+    // ページ全体
     return figma.currentPage.findAll().length;
   }
 }
@@ -26,7 +26,7 @@ function getElements(selectionOnly: boolean): readonly SceneNode[] {
     // 選択範囲のみ
     return figma.currentPage.selection;
   } else {
-    // ファイル全体
+    // ページ全体
     return figma.currentPage.findAll();
   }
 }

@@ -175,7 +175,7 @@
     <h2 class="title">Figma Plugin</h2>
 
     <div class="plugin-description">
-      このプラグインは、選択範囲またはファイル全体の要素に対してx座標を0に変更します。
+      このプラグインは、選択範囲またはページ全体の要素に対してx座標を0に変更します。
     </div>
 
     <div class="checkbox-container">
@@ -189,7 +189,7 @@
     </div>
 
     <div class="element-count">
-      <div class="element-count-label" id="countLabel">ファイル全体の要素数</div>
+      <div class="element-count-label" id="countLabel">ページ全体の要素数</div>
       <div class="element-count-value" id="elementCount">0</div>
     </div>
 
@@ -215,7 +215,7 @@
       if (checkbox.checked) {
         checkboxDescription.textContent = '選択された要素のみに反映';
       } else {
-        checkboxDescription.textContent = '現在開いているファイル全体に反映';
+        checkboxDescription.textContent = '現在開いているページ全体に反映';
       }
     }
 
@@ -245,7 +245,7 @@
         elementCount.textContent = msg.count;
         countLabel.textContent = msg.selectionOnly
           ? '選択範囲の要素数'
-          : 'ファイル全体の要素数';
+          : 'ページ全体の要素数';
       } else if (msg && msg.type === 'selection-changed') {
         // 選択が変更されたときに要素数を再取得
         requestElementCount();
