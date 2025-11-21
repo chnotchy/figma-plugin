@@ -149,6 +149,13 @@
       gap: 8px;
       margin-top: auto;
       padding-top: 16px;
+      position: sticky;
+      bottom: 0;
+      background: var(--md-sys-color-surface);
+      padding-bottom: 16px;
+      padding-top: 16px;
+      margin-top: 16px;
+      border-top: 1px solid var(--md-sys-color-outline-variant);
     }
   </style>
 </head>
@@ -159,11 +166,11 @@
 
     <div class="checkbox-container">
       <div class="checkbox-wrapper">
-        <input type="checkbox" id="selectionOnly" />
+        <input type="checkbox" id="selectionOnly" checked />
         <label for="selectionOnly">選択範囲のみ</label>
       </div>
       <div class="checkbox-description" id="checkboxDescription">
-        現在開いているファイル全体に反映
+        選択された要素のみに反映
       </div>
     </div>
 
@@ -230,6 +237,9 @@
         requestElementCount();
       }
     });
+
+    // 初期化時に説明文を更新
+    updateDescription();
 
     // 初期化時に要素数を取得
     requestElementCount();

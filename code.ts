@@ -41,8 +41,8 @@ function sendElementCount(selectionOnly: boolean) {
   });
 }
 
-// 初期要素数を送信
-sendElementCount(false);
+// 初期要素数を送信（デフォルトは選択範囲のみ）
+sendElementCount(true);
 
 // 選択が変更されたときに要素数を更新
 figma.on('selectionchange', () => {
